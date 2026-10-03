@@ -1,93 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Emmanuel Mwape | Radiography & Ultrasound</title>
-<meta name="description" content="Emmanuel Mwape — Radiography and Ultrasound Services. Professional, patient-focused medical imaging.">
-<style>
-:root{--navy:#071d36;--blue:#0d6efd;--cyan:#18a7c9;--ice:#eef8fc;--text:#172332;--muted:#657487;--line:#dbe7ef;--white:#fff}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff;line-height:1.6}
-nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav{max-width:1120px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:900;letter-spacing:.5px;color:var(--navy)}
-nav a{color:var(--text);text-decoration:none;font-weight:650;font-size:14px;margin-left:22px}
-.hero{background:radial-gradient(circle at 85% 20%,#d9f5fb 0,#eef8fc 25%,#fff 65%);padding:90px 20px 85px}
-.hero-grid{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center}
-.eyebrow{display:inline-block;background:#dff5fa;color:#087c99;border-radius:30px;padding:7px 13px;font-size:12px;font-weight:800;letter-spacing:.8px}
-h1{font-size:clamp(44px,7vw,76px);line-height:1.02;color:var(--navy);letter-spacing:-3px;margin:18px 0}
-.hero p{font-size:19px;color:var(--muted);max-width:650px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-block;padding:13px 20px;border-radius:11px;text-decoration:none;font-weight:800}
-.primary{background:var(--blue);color:#fff}.secondary{background:#fff;color:var(--navy);border:1px solid var(--line)}
-.profile{background:#fff;border:1px solid var(--line);border-radius:30px;padding:28px;box-shadow:0 25px 70px rgba(7,29,54,.10)}
-.photo{height:300px;border-radius:22px;background:linear-gradient(135deg,#eaf7fb,#dbeaf4);display:flex;align-items:center;justify-content:center;font-size:80px}
-.profile h3{color:var(--navy);font-size:22px;margin-top:18px}.profile p{font-size:14px;margin-top:5px}
-section{padding:78px 20px}.container{max-width:1120px;margin:auto}
-.heading{text-align:center;margin-bottom:42px}.heading h2{font-size:38px;color:var(--navy)}.heading p{color:var(--muted)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid var(--line);border-radius:18px;padding:25px;background:#fff}.card .icon{font-size:32px}.card h3{color:var(--navy);margin:9px 0 6px}.card p{font-size:14px;color:var(--muted)}
-.alt{background:var(--ice)}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}.about h2{font-size:40px;color:var(--navy);margin-bottom:12px}.about p{color:var(--muted);margin-bottom:12px}
-.list{list-style:none;margin-top:18px}.list li{margin:10px 0}
-.notice{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px}.notice h3{color:var(--navy);margin-bottom:8px}
-.booking{background:var(--navy);color:#fff;border-radius:28px;padding:45px}.booking h2{font-size:38px}.booking>p{color:#d5e1ee;margin:8px 0 28px}.form{display:grid;grid-template-columns:1fr 1fr;gap:14px}.form input,.form select,.form textarea{width:100%;padding:13px 14px;border:0;border-radius:10px;font:inherit}.form textarea{grid-column:1/-1;min-height:110px}.full{grid-column:1/-1}
-.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:25px}.contact div{background:rgba(255,255,255,.09);padding:17px;border-radius:12px}.contact small{display:block;color:#bcd0e2}
-footer{text-align:center;padding:28px 20px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-@media(max-width:760px){nav .links{display:none}.hero-grid,.about{grid-template-columns:1fr}.profile{display:none}.cards{grid-template-columns:1fr}.form,.contact{grid-template-columns:1fr}.form textarea,.full{grid-column:auto}section{padding:58px 18px}.hero{padding:65px 18px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Emmanuel Mwape | Radiography & Ultrasound Services</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #f5f8fa;
+    }
+
+    header {
+      background: #063b5c;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      opacity: 0.7;
+    }
+
+    .hero {
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      padding: 60px 8%;
+      background: linear-gradient(135deg, #eaf7ff, #ffffff);
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      color: #063b5c;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #063b5c;
+      color: white;
+      padding: 13px 25px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .button:hover {
+      background: #0a577f;
+    }
+
+    section {
+      padding: 70px 8%;
+    }
+
+    section h2 {
+      text-align: center;
+      color: #063b5c;
+      margin-bottom: 40px;
+      font-size: 32px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      color: #063b5c;
+      margin-bottom: 12px;
+    }
+
+    .about {
+      background: white;
+    }
+
+    .about-content {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+
+    footer {
+      background: #063b5c;
+      color: white;
+      text-align: center;
+      padding: 25px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 7px;
+        font-size: 14px;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 17px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<nav><div class="nav"><div class="logo">EMMANUEL MWAPE</div><div class="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#booking">Book</a><a href="#contact">Contact</a></div></div></nav>
 
-<header class="hero" id="home">
-<div class="hero-grid">
-<div>
-<span class="eyebrow">RADIOGRAPHY & ULTRASOUND</span>
-<h1>Emmanuel<br>Mwape</h1>
-<p>Professional medical imaging services with a patient-focused approach, clear communication and a commitment to quality practice.</p>
-<div class="actions"><a class="btn primary" href="#booking">Book an Appointment</a><a class="btn secondary" href="#services">Explore Services</a></div>
-</div>
-<div class="profile"><div class="photo">🩻</div><h3>Your Professional Photo</h3><p>Replace this area with your preferred professional photograph.</p></div>
-</div>
-</header>
+  <header>
+    <h1>Emmanuel Mwape</h1>
 
-<section id="services"><div class="container">
-<div class="heading"><h2>Services</h2><p>A simple overview of imaging services offered.</p></div>
-<div class="cards">
-<div class="card"><div class="icon">🤰</div><h3>Obstetric Ultrasound</h3><p>Pregnancy ultrasound assessment according to the appropriate clinical indication.</p></div>
-<div class="card"><div class="icon">🩺</div><h3>Abdominal Ultrasound</h3><p>Ultrasound examination of abdominal organs and related structures.</p></div>
-<div class="card"><div class="icon">🔬</div><h3>Pelvic Ultrasound</h3><p>Pelvic imaging for appropriate clinical indications.</p></div>
-<div class="card"><div class="icon">🎗️</div><h3>Breast Ultrasound</h3><p>Ultrasound assessment of breast findings when clinically indicated.</p></div>
-<div class="card"><div class="icon">🦴</div><h3>Radiography</h3><p>General X-ray services can be listed here according to your practice.</p></div>
-<div class="card"><div class="icon">📋</div><h3>Patient Information</h3><p>Information about preparation, appointments and what to expect during imaging.</p></div>
-</div></div></section>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section class="alt" id="about"><div class="container about">
-<div><h2>About Me</h2><p>Welcome to my professional website. This platform makes it easier for patients and clients to learn about my medical imaging services and get in touch.</p><p>I aim to provide a professional, respectful and patient-focused experience.</p><ul class="list"><li>✓ Patient-focused communication</li><li>✓ Professional medical imaging approach</li><li>✓ Easy appointment enquiries</li><li>✓ Clear information for patients</li></ul></div>
-<div class="notice"><h3>Professional information</h3><p>This section can later contain your qualifications, professional registration details, clinical experience and a short biography.</p></div>
-</div></section>
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Radiography & Ultrasound Services</h2>
 
-<section id="booking"><div class="container"><div class="booking">
-<h2>Request an Appointment</h2><p>Send an appointment enquiry. Your contact details can be connected to WhatsApp, email or another booking system later.</p>
-<form class="form" onsubmit="return false">
-<input placeholder="Your name" aria-label="Your name"><input placeholder="Phone / WhatsApp number" aria-label="Phone number">
-<select aria-label="Service"><option>Select a service</option><option>Obstetric Ultrasound</option><option>Abdominal Ultrasound</option><option>Pelvic Ultrasound</option><option>Breast Ultrasound</option><option>Radiography</option></select>
-<input type="date" aria-label="Preferred date"><textarea placeholder="Additional information (optional)" aria-label="Additional information"></textarea>
-<div class="full"><a class="btn primary" href="#contact">Continue to Contact</a></div>
-</form></div></div></section>
+      <p>
+        Professional medical imaging services with a focus on quality,
+        patient care and reliable diagnostic imaging.
+      </p>
 
-<section id="contact"><div class="container">
-<div class="heading"><h2>Contact</h2><p>Replace the placeholders with your actual details before publishing.</p></div>
-<div class="contact" style="margin-top:0">
-<div><strong>📞 Phone</strong><small>YOUR PHONE NUMBER</small></div>
-<div><strong>💬 WhatsApp</strong><small>YOUR WHATSAPP NUMBER</small></div>
-<div><strong>📍 Location</strong><small>YOUR LOCATION</small></div>
-</div>
-<div class="actions" style="justify-content:center"><a class="btn primary" href="mailto:YOUR-EMAIL@example.com">Email Me</a></div>
-</div></section>
+      <a href="#contact" class="button">Book an Appointment</a>
+    </div>
+  </section>
 
-<footer>© 2026 Emmanuel Mwape · Radiography & Ultrasound</footer>
+  <section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+
+      <div class="card">
+        <h3>Ultrasound</h3>
+        <p>
+          General ultrasound examinations using modern imaging technology.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Obstetric Ultrasound</h3>
+        <p>
+          Ultrasound imaging for pregnancy assessment and fetal evaluation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Gynecological Ultrasound</h3>
+        <p>
+          Imaging services for assessment of the uterus, ovaries and pelvis.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Radiography</h3>
+        <p>
+          Diagnostic X-ray imaging for a range of clinical examinations.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Emmanuel Mwape</h2>
+
+    <div class="about-content">
+      <p>
+        Emmanuel Mwape is a medical imaging professional with an interest
+        in radiography and ultrasound services. This platform provides
+        information about available imaging services and ways to get in
+        touch.
+      </p>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+
+    <div class="contact">
+      <p><strong>Emmanuel Mwape</strong></p>
+      <p>Radiography & Ultrasound Services</p>
+
+      <p>
+        Contact: <strong>+260 XXX XXX XXX</strong>
+      </p>
+
+      <p>
+        Email: <strong>your@email.com</strong>
+      </p>
+
+      <br>
+
+      <a href="mailto:your@email.com" class="button">
+        Contact Me
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Emmanuel Mwape. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
