@@ -7,7 +7,7 @@
   <title>Emmanuel Mwape | Ultrasound & Radiography Services</title>
 
   <meta name="description"
-        content="Emmanuel Mwape - Ultrasound and Radiography Services. Professional medical imaging services with a focus on quality and patient care.">
+        content="Emmanuel Mwape Ultrasound & Radiography Services. Professional medical imaging services in Zambia.">
 
   <style>
     * {
@@ -20,11 +20,9 @@
     body {
       font-family: Arial, Helvetica, sans-serif;
       color: #17202a;
-      background: #f7fafc;
+      background: #f5f9fb;
       line-height: 1.6;
     }
-
-    /* NAVIGATION */
 
     header {
       background: #073b4c;
@@ -36,7 +34,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+      box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     }
 
     .logo {
@@ -64,19 +62,16 @@
       opacity: 0.7;
     }
 
-    /* HERO */
-
     .hero {
       min-height: 88vh;
       display: flex;
       align-items: center;
       padding: 70px 7%;
-      background:
-        linear-gradient(120deg, #eaf8ff, #ffffff);
+      background: linear-gradient(120deg, #e8f7fb, #ffffff);
     }
 
     .hero-content {
-      max-width: 750px;
+      max-width: 780px;
     }
 
     .small-title {
@@ -85,10 +80,11 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       margin-bottom: 15px;
+      font-size: 14px;
     }
 
     .hero h1 {
-      font-size: 54px;
+      font-size: 55px;
       line-height: 1.1;
       color: #073b4c;
       margin-bottom: 22px;
@@ -100,7 +96,7 @@
 
     .hero p {
       font-size: 19px;
-      max-width: 650px;
+      max-width: 680px;
       margin-bottom: 30px;
       color: #455a64;
     }
@@ -118,6 +114,7 @@
       text-decoration: none;
       font-weight: bold;
       transition: 0.2s;
+      cursor: pointer;
     }
 
     .btn-primary {
@@ -134,8 +131,6 @@
     .btn:hover {
       transform: translateY(-2px);
     }
-
-    /* GENERAL */
 
     section {
       padding: 80px 7%;
@@ -155,8 +150,6 @@
     .section-title p {
       color: #667781;
     }
-
-    /* SERVICES */
 
     .services {
       display: grid;
@@ -191,8 +184,6 @@
       color: #667781;
     }
 
-    /* ABOUT */
-
     .about {
       background: white;
     }
@@ -209,8 +200,6 @@
       margin-bottom: 18px;
     }
 
-    /* WHY US */
-
     .why-us {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -218,7 +207,7 @@
     }
 
     .why-card {
-      background: #ffffff;
+      background: white;
       padding: 25px;
       border-radius: 10px;
       text-align: center;
@@ -229,8 +218,6 @@
       color: #073b4c;
       margin-bottom: 8px;
     }
-
-    /* APPOINTMENT */
 
     .appointment {
       background: #073b4c;
@@ -254,17 +241,15 @@
       color: #073b4c;
     }
 
-    /* CONTACT */
-
     .contact {
       text-align: center;
     }
 
     .contact-box {
-      max-width: 650px;
+      max-width: 700px;
       margin: auto;
       background: white;
-      padding: 35px;
+      padding: 40px;
       border-radius: 12px;
       box-shadow: 0 5px 20px rgba(0,0,0,0.07);
     }
@@ -274,21 +259,40 @@
       font-size: 17px;
     }
 
-    /* FOOTER */
+    .contact-box a {
+      word-break: break-word;
+    }
 
     footer {
       background: #052c39;
       color: white;
       text-align: center;
-      padding: 25px 7%;
+      padding: 28px 7%;
     }
 
     footer p {
       opacity: 0.8;
       font-size: 14px;
+      margin: 5px;
     }
 
-    /* MOBILE */
+    .whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      background: #25D366;
+      color: white;
+      width: 58px;
+      height: 58px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 28px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+      z-index: 2000;
+    }
 
     @media (max-width: 750px) {
 
@@ -319,13 +323,15 @@
       section {
         padding: 60px 7%;
       }
+
+      .contact-box {
+        padding: 25px 18px;
+      }
     }
   </style>
 </head>
 
 <body>
-
-<!-- NAVIGATION -->
 
 <header>
 
@@ -344,8 +350,6 @@
 </header>
 
 
-<!-- HERO -->
-
 <section class="hero" id="home">
 
   <div class="hero-content">
@@ -362,7 +366,7 @@
     <p>
       Welcome to Emmanuel Mwape Ultrasound & Radiography Services.
       Providing professional medical imaging services with a focus
-      on quality, patient care and reliable results.
+      on quality, patient care and reliable imaging.
     </p>
 
     <div class="buttons">
@@ -382,8 +386,6 @@
 </section>
 
 
-<!-- SERVICES -->
-
 <section id="services">
 
   <div class="section-title">
@@ -391,75 +393,64 @@
     <h2>Our Services</h2>
 
     <p>
-      Medical imaging services designed to support accurate clinical assessment.
+      Medical imaging services to support clinical assessment.
     </p>
 
   </div>
 
-
   <div class="services">
 
     <div class="service-card">
-
       <div class="icon">🔊</div>
 
       <h3>General Ultrasound</h3>
 
       <p>
-        Ultrasound imaging for assessment of abdominal and other
-        soft-tissue structures.
+        Ultrasound imaging for assessment of abdominal and
+        other soft-tissue structures.
       </p>
-
     </div>
 
 
     <div class="service-card">
-
       <div class="icon">🤰</div>
 
       <h3>Obstetric Ultrasound</h3>
 
       <p>
-        Pregnancy ultrasound examinations for appropriate fetal
-        and pregnancy assessment.
+        Pregnancy ultrasound examinations for appropriate
+        fetal and pregnancy assessment.
       </p>
-
     </div>
 
 
     <div class="service-card">
-
       <div class="icon">🩺</div>
 
       <h3>Gynecological Ultrasound</h3>
 
       <p>
-        Ultrasound assessment of the uterus, ovaries and pelvic
-        structures.
+        Ultrasound assessment of the uterus, ovaries
+        and pelvic structures.
       </p>
-
     </div>
 
 
     <div class="service-card">
-
       <div class="icon">🩻</div>
 
       <h3>Radiography</h3>
 
       <p>
-        Diagnostic X-ray imaging for selected clinical examinations
-        as requested.
+        Diagnostic X-ray imaging for selected clinical
+        examinations as requested.
       </p>
-
     </div>
 
   </div>
 
 </section>
 
-
-<!-- ABOUT -->
 
 <section class="about" id="about">
 
@@ -472,21 +463,20 @@
   <div class="about-container">
 
     <p>
-      Emmanuel Mwape is a medical imaging professional with an interest
-      in radiography and ultrasound services.
+      Emmanuel Mwape is a medical imaging professional with
+      an interest in radiography and ultrasound services.
     </p>
 
     <p>
-      This platform provides information about available imaging services
-      and a simple way for clients to make enquiries and appointments.
+      This platform provides information about available
+      imaging services and a simple way for clients to make
+      enquiries and appointments.
     </p>
 
   </div>
 
 </section>
 
-
-<!-- WHY CHOOSE US -->
 
 <section>
 
@@ -494,70 +484,53 @@
 
     <h2>Our Approach</h2>
 
-    <p>Focused on professional service and patient experience.</p>
+    <p>
+      Focused on professional service and patient experience.
+    </p>
 
   </div>
-
 
   <div class="why-us">
 
     <div class="why-card">
-
       <div class="icon">✓</div>
-
       <h3>Professional</h3>
-
       <p>
         A professional approach to medical imaging services.
       </p>
-
     </div>
 
 
     <div class="why-card">
-
       <div class="icon">♥</div>
-
       <h3>Patient Focused</h3>
-
       <p>
         Respectful and patient-centered service.
       </p>
-
     </div>
 
 
     <div class="why-card">
-
       <div class="icon">🔬</div>
-
       <h3>Quality Imaging</h3>
-
       <p>
         Commitment to quality imaging practices.
       </p>
-
     </div>
 
 
     <div class="why-card">
-
       <div class="icon">📱</div>
-
       <h3>Easy Contact</h3>
-
       <p>
         Simple ways to make enquiries and appointments.
       </p>
-
     </div>
 
   </div>
 
 </section>
 
-
-<!-- APPOINTMENT -->
 
 <section class="appointment">
 
@@ -574,8 +547,6 @@
 </section>
 
 
-<!-- CONTACT -->
-
 <section class="contact" id="contact">
 
   <div class="section-title">
@@ -588,7 +559,6 @@
 
   </div>
 
-
   <div class="contact-box">
 
     <p>
@@ -600,24 +570,34 @@
     </p>
 
     <p>
-      📞 +260 XXX XXX XXX
+      📞 <strong>+260 976 036 363</strong>
     </p>
 
     <p>
-      ✉️ your@email.com
+      ✉️ <strong>emmanuelmwape808@gmail.com</strong>
     </p>
 
     <br>
 
     <div class="buttons" style="justify-content:center;">
 
-      <a href="tel:+260XXXXXXXXX" class="btn btn-primary">
-        Call
+      <a
+        href="tel:+260976036363"
+        class="btn btn-primary">
+        📞 Call
       </a>
 
-      <a href="https://wa.me/260XXXXXXXXX"
-         class="btn btn-secondary">
-        WhatsApp
+      <a
+        href="https://wa.me/260976036363"
+        class="btn btn-secondary"
+        target="_blank">
+        💬 WhatsApp
+      </a>
+
+      <a
+        href="mailto:emmanuelmwape808@gmail.com"
+        class="btn btn-secondary">
+        ✉️ Email
       </a>
 
     </div>
@@ -626,8 +606,6 @@
 
 </section>
 
-
-<!-- FOOTER -->
 
 <footer>
 
@@ -640,6 +618,15 @@
   </p>
 
 </footer>
+
+
+<a
+  href="https://wa.me/260976036363"
+  class="whatsapp"
+  target="_blank"
+  aria-label="Chat on WhatsApp">
+  💬
+</a>
 
 </body>
 </html>
